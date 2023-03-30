@@ -12,6 +12,21 @@
     width: 100%;
     position: relative;
     text-align: center;
+
+    .flagPic {
+        position: absolute;
+        opacity: 0.1;
+        z-index: -1;
+        left: 0;
+    }
+
+    h1, h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
 }
 
 .editIcon {

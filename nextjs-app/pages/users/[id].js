@@ -52,6 +52,11 @@ export default function ({ userData }) {
     <Layout>
       <div className={style.userProfile}>
         <div className={style.inner}>
+          <img
+            className={style.flagPic}
+            alt={user.flagPic}
+            src={user.flagPic}
+          />
           <img alt={user.name} src={user.profilePic} />
           <h1>{user.name}</h1>
           <h2>{user.country}</h2>
@@ -64,7 +69,10 @@ export default function ({ userData }) {
           onClose={onClose}
           open={open}
         >
-          <form className={style.editDetailsForm} onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className={style.editDetailsForm}
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <label>Name</label>
             <input
               {...register("name", { required: false })}
