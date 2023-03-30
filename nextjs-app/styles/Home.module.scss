@@ -1,0 +1,20 @@
+.container {
+  min-height: calc(100vh - 72px);
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.links {
+  margin-bottom: 2.5rem;
+  a {
+    margin: 1rem;
+    border-bottom: 1px solid #000;
+  }
+}
