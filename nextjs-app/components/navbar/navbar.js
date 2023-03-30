@@ -24,6 +24,7 @@ export default function Navbar({ user }) {
             {user && (
               <Dropdown menu={{ items }}>
                 <Image
+                  alt={user.name}
                   className={styles.avatar}
                   src={user.picture}
                   width={40}

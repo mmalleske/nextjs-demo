@@ -6,11 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "5.0.1",
     "@auth0/nextjs-auth0": "2.4.0",
     "antd": "5.3.3",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "7.43.8"
   },
   "devDependencies": {
     "sass": "1.60.0"
