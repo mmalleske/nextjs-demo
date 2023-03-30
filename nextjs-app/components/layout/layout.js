@@ -9,7 +9,6 @@ export const siteTitle = "Mike Malleske - Next Demo App";
 
 export default function Layout({ children, home }) {
   const { user, error, isLoading } = useUser();
-  console.log(user);
 
   return (
     <div>

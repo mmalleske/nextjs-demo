@@ -9,7 +9,6 @@ import { EditFilled } from "@ant-design/icons";
 
 export async function getStaticProps({ params }) {
   const userData = await getUserData(params.id);
-  console.log(userData);
   return {
     props: {
       userData,

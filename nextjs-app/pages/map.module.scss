@@ -9,6 +9,21 @@
     z-index: 9;
     background-color: #fff;
     box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.5 );
+    
+    li {
+        
+        cursor: pointer;
+        transition: background-color .1s;
+        &:hover {
+            background-color: #f7f7f7;
+        }
+
+        img {
+            height: 12px;
+            margin-right: 1.5rem;
+        }
+    };
+
 }
 
 .marker {
