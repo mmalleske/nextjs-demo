@@ -18,6 +18,10 @@ export default function Layout({ children, home }) {
         <meta name="description" content="Example project in Next.js" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+          rel="stylesheet"
+        />
       </Head>
       <header>
         <Navbar user={user || null} />
