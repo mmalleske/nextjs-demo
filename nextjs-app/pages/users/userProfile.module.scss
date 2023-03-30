@@ -6,6 +6,11 @@
     justify-content: center;
     max-width: 720px;
     margin: 0 auto;
+
+    @media (max-width: 599px) {
+        height: 100%;
+        padding: 2rem;
+    }
 }
 
 .inner {

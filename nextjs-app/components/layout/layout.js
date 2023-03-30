@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   const { user, error, isLoading } = useUser();
 
   return (
-    <div>
+    <div className={styles.layout}>
       <Head>
         <title>{siteTitle}</title>
         <meta name="description" content="Example project in Next.js" />

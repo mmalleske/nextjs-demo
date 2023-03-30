@@ -24,6 +24,10 @@
         }
     };
 
+    @media(max-width: 599px) {
+        width: 180px;
+    }
+
 }
 
 .marker {

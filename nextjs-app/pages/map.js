@@ -5,23 +5,30 @@ import { Map as MapGl, Popup, Marker } from "react-map-gl";
 import { Divider, List, Typography } from "antd";
 import style from "./map.module.scss";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { useWindowWidth } from "@react-hook/window-size";
 import Link from "next/link";
 
 export default function Map() {
   const [viewState, setViewState] = useState({
     latitude: 0,
     longitude: 0,
-    zoom: 1.5
+    zoom: 1.5,
   });
 
+  const width = useWindowWidth();
 
-  const handleClickUser = (user) => {    
-    setViewState({ latitude: user.latitude, longitude: user.longitude, zoom: 3 });
+  const handleClickUser = (user) => {
+    setViewState({
+      latitude: user.latitude,
+      longitude: user.longitude,
+      zoom: 3,
+    });
   };
 
   return (
     <Layout>
       <List
+        size={width > 599 ? "large" : "small"}
         className={style.userList}
         bordered
         header={
@@ -38,7 +45,7 @@ export default function Map() {
         )}
       />
       <div className={style.mapPage}>
-        <MapGl            
+        <MapGl
           {...viewState}
           initialViewState={{ latitude: 0, longitude: 0, zoom: 1.5 }}
           style={{
